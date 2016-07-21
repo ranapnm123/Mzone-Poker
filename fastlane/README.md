@@ -6,11 +6,6 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
-### ios build_app
-```
-fastlane ios build_app
-```
-
 ### ios alpha_hockeyapp
 ```
 fastlane ios alpha_hockeyapp
