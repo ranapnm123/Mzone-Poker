@@ -15,7 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.dfdfdfddfdfddfadfdfdfffdffffffdadf asfaffqfqfqeqfsfdfd
+    // Override point for customization after application launch.dfdfdfddfdfddfadfdfdfffdffffffdadf asfaffqfqfqeqfsfdfddfdf
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     
     UINavigationController *newNC = [[UINavigationController alloc] initWithRootViewController:self.viewController];
