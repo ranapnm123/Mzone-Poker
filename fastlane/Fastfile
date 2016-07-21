@@ -16,77 +16,128 @@ fastlane_version "1.97.2"
 default_platform :ios
 
 platform :ios do
-  before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    
-    
-  end
+  # Run this before doing anything else
+before_all do
 
-  
-  #desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "Animated Table") # Build your app - more options available
-    pilot
+  # If the GIT status is not clean, abort. We won't want to include junk in the build
+  ensure_git_status_clean
 
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
-  end
-
-  #desc "Deploy a new version to the App Store"
-  #lane :appstore do
-    # match(type: "appstore")
-    # snapshot
-    #gym(scheme: "Animated Table") # Build your app - more options available
-    #deliver(force: true)
-    # frameit
-  #end
-
-  # You can define as many lanes as you want
-
-  after_all do |lane|
-    # This block is called, only if the executed lane was successful
-
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
-  end
-
-desc "Take screenshots"
-lane :screenshot do
-  snapshot
 end
 
-desc "Create ipa"
-lane :build do
-  gym
+# After all the steps have completed succesfully, run this.
+after_all do |lane|
+
+  # Remove all build artifacts, but keep mobileprovisioning profiles since they are stored in GIT
+  clean_build_artifacts(
+    exclude_pattern: ".*\.mobileprovision"
+  )
+
+  # Reset all changes to the git checkout
+  reset_git_repo(
+    force: true
+  )
+
 end
 
-desc "Upload to App Store"
-lane :upload do
-  deliver
+# If there was an error, run this
+error do |lane, exception|
+
+  # Remove all build artifacts, but keep mobileprovisioning profiles since they are stored in GIT
+  clean_build_artifacts(
+    exclude_pattern: ".*\.mobileprovision"
+  )
+
+  # Reset all changes to the git checkout
+  reset_git_repo(
+    force: true
+  )
+
 end
 
-desc "Runs all the tests"
-      before_all do
-        increment_build_number
-        gym(scheme: "mZone Poker", project: "mZone Poker.xcodeproj", use_legacy_build_api: true)
-      end
-     
-      desc "Runs all the tests"
-      lane :test do
-        scan(device: "iPhone 6s")
-      end
+private_lane :build_app do |options|
 
-
-
-  error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
+  # This part is done only when the app is not for the "production" environment
+  if not options[:release]
+    # Modulate the color of the icons
+    color_icon(
+      modulation: "#{options[:modulation]}"
+    )
+    # Add the build number to the icon
+    build_number_icon
   end
+
+  # Update the app name
+  app_name(
+    plist_path: "#{options[:project_name]}/Info.plist",
+    app_name: options[:app_name]
+  )
+
+  # Update the app identifier
+  update_app_identifier(
+    xcodeproj: "#{options[:project_name]}.xcodeproj",
+    plist_path: "#{options[:project_name]}/Info.plist",
+    app_identifier: options[:app_identifier]
+  )
+
+  # Install the certificate
+  import_certificate(
+    certificate_path: options[:certificate_path],
+    certificate_password: options[:certificate_password],
+    keychain_name: "login.keychain"
+  )
+
+  # Install the provisioning profile
+  update_project_provisioning(
+    xcodeproj: "#{options[:project_name]}.xcodeproj",
+    profile: options[:profile]
+  )
+
+  # Version bump
+  increment_build_number(
+    build_number: options[:build_number]
+  )
+
+  # Build the app
+  gym(
+    scheme: "#{options[:scheme]}",
+    configuration: options[:configuration],
+    provisioning_profile_path: options[:profile],
+    codesigning_identity: options[:codesigning_identity],
+    export_method: options[:export_method]
+  )
+
+end
+
+# Publish to Testflight
+private_lane :publish_testflight do |options|
+
+  # Generate a changelog with GIT since the last successful build in Jenkins
+  changelog = sh("git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD")
+
+  # Send the app to Testflight
+  pilot(
+    changelog: "#{changelog.to_s}"
+  )
+end
+
+# Publish to Hockeyapp
+private_lane :publish_hockey do |options|
+
+  # Generate a changelog with GIT since the last successful build in Jenkins
+  changelog = sh("git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD")
+
+  # Send the app to Hockeyapp (fill in your API token!)
+  hockey(
+    api_token: "<your api token here>",
+    notes: "#{changelog.to_s}",
+    release_type: options[:release_type]
+  )
+end
+
+# Publish to the AppStore
+private_lane :publish_appstore do |options|
+  deliver(force: true)
+end
 end
 
 
