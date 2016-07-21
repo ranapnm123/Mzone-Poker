@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites tests='1' failures='0'>
   <testsuite name='mZone_PokerUITests.mZone_PokerUITests' tests='1' failures='0'>
-    <testcase classname='mZone_PokerUITests.mZone_PokerUITests' name='testExample' time='5.471'/>
+    <testcase classname='mZone_PokerUITests.mZone_PokerUITests' name='testExample' time='5.985'/>
   </testsuite>
 </testsuites>
