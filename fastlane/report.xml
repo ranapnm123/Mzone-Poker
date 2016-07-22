@@ -3,32 +3,27 @@
   <testsuite name="fastlane.lanes">
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000576">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000868">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000229">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000241">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: ensure_git_status_clean" time="0.008275">
+      <testcase classname="fastlane.lanes" name="2: increment_build_number" time="1.586004">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: Switch to ios build_app lane" time="0.000219">
+      <testcase classname="fastlane.lanes" name="3: gym" time="13.03585">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: clean_build_artifacts" time="0.000834">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="5: reset_git_repo" time="0.020162">
+      <testcase classname="fastlane.lanes" name="4: snapshot" time="487.711652">
         
       </testcase>
     

@@ -6,26 +6,33 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
-### ios alpha_hockeyapp
+### ios beta
 ```
-fastlane ios alpha_hockeyapp
+fastlane ios beta
 ```
+This will also make sure the profile is up to date
+### ios screenshot
+```
+fastlane ios screenshot
+```
+Take screenshots
+### ios build
+```
+fastlane ios build
+```
+Create ipa
+### ios upload
+```
+fastlane ios upload
+```
+Upload to App Store
+### ios test
+```
+fastlane ios test
+```
+Runs all the tests
 
-### ios beta_hockeyapp
-```
-fastlane ios beta_hockeyapp
-```
-
-### ios release_hockeyapp
-```
-fastlane ios release_hockeyapp
-```
-
-### ios release_appstore
-```
-fastlane ios release_appstore
-```
-
+Runs all the tests
 
 ----
 
