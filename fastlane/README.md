@@ -6,6 +6,26 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
+### ios build_app
+```
+fastlane ios build_app
+```
+
+### ios publish_testflight
+```
+fastlane ios publish_testflight
+```
+
+### ios publish_hockey
+```
+fastlane ios publish_hockey
+```
+
+### ios publish_appstore
+```
+fastlane ios publish_appstore
+```
+
 ### ios release_appstore
 ```
 fastlane ios release_appstore
