@@ -1,3 +1,14 @@
+
+
+# Define the minimal Fastlane version
+fastlane_version “1.97.2”
+
+# Use the iOS platform as default
+default_platform :ios
+
+# Define what to do for the iOS platform
+platform :ios do
+
 # Run this before doing anything else
 before_all do
 
@@ -35,14 +46,6 @@ error do |lane, exception|
 
 end
 
-# Define the minimal Fastlane version
-fastlane_version “1.97.2”
-
-# Use the iOS platform as default
-default_platform :ios
-
-# Define what to do for the iOS platform
-platform :ios do
 private_lane :build_app do |options|
 
   # This part is done only when the app is not for the "production" environment
