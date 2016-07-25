@@ -59,11 +59,10 @@ lane :build_app do |options|
   end
 
   # Update the app name
- lane : app_name(
+  app_name(
     plist_path: "#{options[:project_name]}/Info.plist",
     app_name: options[:app_name]
   )
-end
 
   # Update the app identifier
   update_app_identifier(
