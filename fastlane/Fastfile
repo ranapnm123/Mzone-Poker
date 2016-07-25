@@ -46,7 +46,7 @@ error do |lane, exception|
 
 end
 
-private_lane :build_app do |options|
+lane :build_app do |options|
 
   # This part is done only when the app is not for the "production" environment
   if not options[:release]
@@ -59,10 +59,11 @@ private_lane :build_app do |options|
   end
 
   # Update the app name
-  app_name(
+ lane : app_name(
     plist_path: "#{options[:project_name]}/Info.plist",
     app_name: options[:app_name]
   )
+end
 
   # Update the app identifier
   update_app_identifier(
@@ -101,7 +102,7 @@ private_lane :build_app do |options|
 end
 
 # Publish to Testflight
-private_lane :publish_testflight do |options|
+lane :publish_testflight do |options|
 
   # Generate a changelog with GIT since the last successful build in Jenkins
   changelog = sh("git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD")
@@ -113,7 +114,7 @@ private_lane :publish_testflight do |options|
 end
 
 # Publish to Hockeyapp
-private_lane :publish_hockey do |options|
+lane :publish_hockey do |options|
 
   # Generate a changelog with GIT since the last successful build in Jenkins
   changelog = sh("git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD")
@@ -127,7 +128,7 @@ private_lane :publish_hockey do |options|
 end
 
 # Publish to the AppStore
-private_lane :publish_appstore do |options|
+lane :publish_appstore do |options|
   deliver(force: true)
 end
 
