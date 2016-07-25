@@ -1,97 +1,164 @@
-# Customise this file, documentation can be found here:
-# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
-# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
-# can also be listed using the `fastlane actions` command
+# Run this before doing anything else
+before_all do
 
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
+  # If the GIT status is not clean, abort. We won't want to include junk in the build
+  ensure_git_status_clean
 
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
+end
 
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
-fastlane_version "1.97.2"
+# After all the steps have completed succesfully, run this.
+after_all do |lane|
 
+  # Remove all build artifacts, but keep mobileprovisioning profiles since they are stored in GIT
+  clean_build_artifacts(
+    exclude_pattern: ".*\.mobileprovision"
+  )
+
+  # Reset all changes to the git checkout
+  reset_git_repo(
+    force: true
+  )
+
+end
+# If there was an error, run this
+error do |lane, exception|
+
+  # Remove all build artifacts, but keep mobileprovisioning profiles since they are stored in GIT
+  clean_build_artifacts(
+    exclude_pattern: ".*\.mobileprovision"
+  )
+
+  # Reset all changes to the git checkout
+  reset_git_repo(
+    force: true
+  )
+
+end
+
+# Define the minimal Fastlane version
+fastlane_version “1.97.2”
+
+# Use the iOS platform as default
 default_platform :ios
 
+# Define what to do for the iOS platform
 platform :ios do
-  before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    
-    
+private_lane :build_app do |options|
+
+  # This part is done only when the app is not for the "production" environment
+  if not options[:release]
+    # Modulate the color of the icons
+    color_icon(
+      modulation: "#{options[:modulation]}"
+    )
+    # Add the build number to the icon
+    build_number_icon
   end
 
-  
-  #desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "Animated Table") # Build your app - more options available
-    pilot(username:”dev@instappy.com”)
+  # Update the app name
+  app_name(
+    plist_path: "#{options[:project_name]}/Info.plist",
+    app_name: options[:app_name]
+  )
 
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
-  end
+  # Update the app identifier
+  update_app_identifier(
+    xcodeproj: "#{options[:project_name]}.xcodeproj",
+    plist_path: "#{options[:project_name]}/Info.plist",
+    app_identifier: options[:app_identifier]
+  )
 
-  #desc "Deploy a new version to the App Store"
-  #lane :appstore do
-    # match(type: "appstore")
-    # snapshot
-    #gym(scheme: "Animated Table") # Build your app - more options available
-    #deliver(force: true)
-    # frameit
-  #end
+ # Install the certificate
+  import_certificate(
+    certificate_path: options[:certificate_path],
+    certificate_password: options[:certificate_password],
+    keychain_name: "login.keychain"
+  )
 
-  # You can define as many lanes as you want
+  # Install the provisioning profile
+  update_project_provisioning(
+    xcodeproj: "#{options[:project_name]}.xcodeproj",
+    profile: options[:profile]
+  )
 
-  after_all do |lane|
-    # This block is called, only if the executed lane was successful
+  # Version bump
+  increment_build_number(
+    build_number: options[:build_number]
+  )
 
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
-  end
+  # Build the app
+  gym(
+    scheme: "#{options[:scheme]}",
+    configuration: options[:configuration],
+    provisioning_profile_path: options[:profile],
+    codesigning_identity: options[:codesigning_identity],
+    export_method: options[:export_method]
+  )
 
-desc "Take screenshots"
-lane :screenshot do
-  snapshot
 end
 
-desc "Create ipa"
-lane :build do
-  gym
+# Publish to Testflight
+private_lane :publish_testflight do |options|
+
+  # Generate a changelog with GIT since the last successful build in Jenkins
+  changelog = sh("git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD")
+
+  # Send the app to Testflight
+  pilot(
+    changelog: "#{changelog.to_s}"
+  )
 end
 
-desc "Upload to App Store"
-lane :upload do
-  deliver
+# Publish to Hockeyapp
+private_lane :publish_hockey do |options|
+
+  # Generate a changelog with GIT since the last successful build in Jenkins
+  changelog = sh("git log --graph --pretty=format:'%h -%d %s <%an>' --abbrev-commit #{ENV['GIT_PREVIOUS_SUCCESSFUL_COMMIT'] || 'HEAD^^^^^'}..HEAD")
+
+  # Send the app to Hockeyapp (fill in your API token!)
+  hockey(
+    api_token: "<your api token here>",
+    notes: "#{changelog.to_s}",
+    release_type: options[:release_type]
+  )
 end
 
-desc "Runs all the tests"
-      before_all do
-        increment_build_number
-        gym(scheme: "mZone Poker", project: "mZone Poker.xcodeproj", use_legacy_build_api: true)
-      end
-     
-      desc "Runs all the tests"
-      lane :test do
-        scan(device: "iPhone 6s")
-      end
-
-
-
-  error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
-  end
+# Publish to the AppStore
+private_lane :publish_appstore do |options|
+  deliver(force: true)
 end
 
+# Build and publish the Release version to the AppStore
+lane :release_appstore do
+  # Build
+  build_app(
+    # Not a production release, so add build number and do the color modulation of the icons
+    release:true,
+    # Change the app name
+    app_name:”mZone Poker”,
+    # Set the app id
+    app_identifier:"com.mzone.mzonepokerDemo",
+    # Set the path to the certificate to use in building
+    certificate_path:"./fastlane/certs/Certificates.p12",
+    # Set the password of the p12 certificate file
+    certificate_password:”pulp123”,
+    # Set the path to the provisioning profile to use (change this!)
+    profile:"./fastlane/certs/commzonemzonepokerDemo_AppStore.mobileprovision",
+    # What configuration to use, usefull for keeping different API keys etc between environments
+    configuration:"Release",
+    # Use this codesigning identity (this is the name of the certificate in your keychain)
+    codesigning_identity:"iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)",
+    # Export an enterprise app
+    export_method:"app-store",
+    # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+    project_name:”mZone Poker”,
+    # the scheme to build
+    scheme:”mZone Poker”,
+    # the build number to use, we use the build number from Jenkins
+    build_number: ENV["BUILD_NUMBER"]
+  )
+  # Push to the appstore
+  publish_appstore
+end
 
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
-# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
-
-# fastlane reports which actions are used
-# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
+end
