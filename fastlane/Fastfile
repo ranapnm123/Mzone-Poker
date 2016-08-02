@@ -10,8 +10,8 @@ platform :ios do
   before_all do
     #sigh
   #update_project_provisioning(
-   # xcodeproj: “./Mzone-Poker/mZone Poker.xcodeproj",
-    #profile: “./Mzone-Poker/fastlane/fastlane/certs/#commzonemzonepokerDemo_AppStore.mobileprovision" 
+   # xcodeproj: “/Users/Ravindra/Documents/Mzone-Poker/mZone Poker.xcodeproj",
+    #profile: “/Users/Ravindra/Documents/Mzone-Poker/fastlane/fastlane:certs/#commzonemzonepokerDemo_AppStore.mobileprovision" 
     #)
 
     gym(scheme: "mZone Poker", project: "mZone Poker.xcodeproj") # Build your app - more options available
