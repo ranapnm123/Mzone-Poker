@@ -1,30 +1,41 @@
-
-
-# Define the minimal Fastlane version
+# Customise this file, documentation can be found here:
+# https://github.com/KrauseFx/fastlane/tree/master/docs
+# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
+# Uncomment the following line to opt out
+opt_out_usage
+update_fastlane
 fastlane_version “1.97.2”
-
-# Use the iOS platform as default
 default_platform :ios
-
-# Define what to do for the iOS platform
 platform :ios do
+  before_all do
+    sigh
+  update_project_provisioning(
+    xcodeproj: "platforms/ios/mZone Poker.xcodeproj",
+    profile: "./commzonemzonepokerDemo_AppStore.mobileprovision" 
+    )
 
-desc "Create ipa"
-lane :build do
-  gym
+    gym(scheme: "mZone Poker", project: "platforms/ios/mZone Poker.xcodeproj") # Build your app - more options available
+  end
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    deliver(beta: true)
+  end
+
+  desc "Deploy a new version to the App Store"
+  desc "** Full Markdown** Support: `code`"
+  lane :deploy do
+    sigh
+  end
+  # You can define as many lanes as you want
+  after_all do |lane|
+    
+  end
+
+  error do |lane, exception|
+  end
 end
 
-#desc "Upload to App Store"
-#lane :upload do
-#  deliver
-#end
 
-
-desc "Upload to App Store and submit for review"
-lane :upload do
-  deliver(
-    submit_for_review: true
-  )
-end
-
-end
+# More information about multiple platforms in fastlane: 
+# https://github.com/KrauseFx/fastlane/blob/master/docs/Platforms.md
