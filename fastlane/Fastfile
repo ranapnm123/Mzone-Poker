@@ -14,7 +14,7 @@ platform :ios do
     #profile: “./Mzone-Poker/fastlane/fastlane/certs/#commzonemzonepokerDemo_AppStore.mobileprovision" 
     #)
 
-    gym(scheme: "mZone Poker", project: "platforms/ios/mZone Poker.xcodeproj") # Build your app - more options available
+    gym(scheme: "mZone Poker", project: "mZone Poker.xcodeproj") # Build your app - more options available
   end
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
