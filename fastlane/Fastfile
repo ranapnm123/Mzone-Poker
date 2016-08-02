@@ -9,7 +9,22 @@ default_platform :ios
 # Define what to do for the iOS platform
 platform :ios do
 
+desc "Create ipa"
+lane :build do
+  gym
+end
 
+#desc "Upload to App Store"
+#lane :upload do
+#  deliver
+#end
+
+
+desc "Upload to App Store and submit for review"
+lane :upload do
+  deliver(
+    submit_for_review: true
+  )
 end
 
 end

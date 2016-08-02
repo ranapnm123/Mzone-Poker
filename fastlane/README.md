@@ -6,31 +6,16 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
-### ios build_app
+### ios build
 ```
-fastlane ios build_app
+fastlane ios build
 ```
-
-### ios publish_testflight
+Create ipa
+### ios upload
 ```
-fastlane ios publish_testflight
+fastlane ios upload
 ```
-
-### ios publish_hockey
-```
-fastlane ios publish_hockey
-```
-
-### ios publish_appstore
-```
-fastlane ios publish_appstore
-```
-
-### ios release_appstore
-```
-fastlane ios release_appstore
-```
-
+Upload to App Store and submit for review
 
 ----
 
