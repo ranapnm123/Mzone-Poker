@@ -20,6 +20,24 @@
 		9BC467A1171F998D0056FDA8 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC467A0171F998D0056FDA8 /* UIView+Positioning.m */; };
 		9BC467A4171F9B540056FDA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC467A2171F9B490056FDA8 /* QuartzCore.framework */; };
 		D31B65FD1D3E683700B32269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31B65FC1D3E683700B32269 /* Images.xcassets */; };
+		D34BFF731D7EF42900877750 /* 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF6C1D7EF42900877750 /* 750x1334.png */; };
+		D34BFF741D7EF42900877750 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF6D1D7EF42900877750 /* 1242x2208.png */; };
+		D34BFF751D7EF42900877750 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF6E1D7EF42900877750 /* Default-568h@2x.png */; };
+		D34BFF761D7EF42900877750 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF6F1D7EF42900877750 /* Default-Portrait@2x~ipad.png */; };
+		D34BFF771D7EF42900877750 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF701D7EF42900877750 /* Default.png */; };
+		D34BFF781D7EF42900877750 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF711D7EF42900877750 /* Default@2x.png */; };
+		D34BFF791D7EF42900877750 /* Default768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF721D7EF42900877750 /* Default768x1024.png */; };
+		D34BFF851D7EF43900877750 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF7A1D7EF43900877750 /* Icon-29.png */; };
+		D34BFF861D7EF43900877750 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF7B1D7EF43900877750 /* Icon-57.png */; };
+		D34BFF871D7EF43900877750 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF7C1D7EF43900877750 /* Icon-60.png */; };
+		D34BFF881D7EF43900877750 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF7D1D7EF43900877750 /* Icon-72.png */; };
+		D34BFF891D7EF43900877750 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF7E1D7EF43900877750 /* Icon-76.png */; };
+		D34BFF8A1D7EF43900877750 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF7F1D7EF43900877750 /* Icon-87.png */; };
+		D34BFF8B1D7EF43900877750 /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF801D7EF43900877750 /* Icon-114.png */; };
+		D34BFF8C1D7EF43900877750 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF811D7EF43900877750 /* Icon-120.png */; };
+		D34BFF8D1D7EF43900877750 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF821D7EF43900877750 /* Icon-144.png */; };
+		D34BFF8E1D7EF43900877750 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF831D7EF43900877750 /* Icon-152.png */; };
+		D34BFF8F1D7EF43900877750 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF841D7EF43900877750 /* Icon-180.png */; };
 		D386BB941D3D3A770008AA8B /* SecondViewCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D386BB901D3D37470008AA8B /* SecondViewCViewController.m */; };
 		D386BB951D3D3AA70008AA8B /* SecondViewCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D386BB911D3D37470008AA8B /* SecondViewCViewController.xib */; };
 		D386BB9D1D3DF7700008AA8B /* mZone_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386BB9C1D3DF7700008AA8B /* mZone_PokerUITests.swift */; };
@@ -57,6 +75,24 @@
 		9BC467A0171F998D0056FDA8 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
 		9BC467A2171F9B490056FDA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D31B65FC1D3E683700B32269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "mZone Poker/Images.xcassets"; sourceTree = "<group>"; };
+		D34BFF6C1D7EF42900877750 /* 750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 750x1334.png; sourceTree = "<group>"; };
+		D34BFF6D1D7EF42900877750 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
+		D34BFF6E1D7EF42900877750 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D34BFF6F1D7EF42900877750 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		D34BFF701D7EF42900877750 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D34BFF711D7EF42900877750 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D34BFF721D7EF42900877750 /* Default768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default768x1024.png; sourceTree = "<group>"; };
+		D34BFF7A1D7EF43900877750 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		D34BFF7B1D7EF43900877750 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
+		D34BFF7C1D7EF43900877750 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		D34BFF7D1D7EF43900877750 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		D34BFF7E1D7EF43900877750 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		D34BFF7F1D7EF43900877750 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
+		D34BFF801D7EF43900877750 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
+		D34BFF811D7EF43900877750 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		D34BFF821D7EF43900877750 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		D34BFF831D7EF43900877750 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		D34BFF841D7EF43900877750 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
 		D386BB8C1D3D12E30008AA8B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		D386BB8E1D3D37460008AA8B /* mZone PokerUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mZone PokerUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D386BB8F1D3D37470008AA8B /* SecondViewCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewCViewController.h; sourceTree = "<group>"; };
@@ -93,6 +129,24 @@
 			isa = PBXGroup;
 			children = (
 				D31B65FC1D3E683700B32269 /* Images.xcassets */,
+				D34BFF6C1D7EF42900877750 /* 750x1334.png */,
+				D34BFF6D1D7EF42900877750 /* 1242x2208.png */,
+				D34BFF6E1D7EF42900877750 /* Default-568h@2x.png */,
+				D34BFF6F1D7EF42900877750 /* Default-Portrait@2x~ipad.png */,
+				D34BFF701D7EF42900877750 /* Default.png */,
+				D34BFF711D7EF42900877750 /* Default@2x.png */,
+				D34BFF721D7EF42900877750 /* Default768x1024.png */,
+				D34BFF7A1D7EF43900877750 /* Icon-29.png */,
+				D34BFF7B1D7EF43900877750 /* Icon-57.png */,
+				D34BFF7C1D7EF43900877750 /* Icon-60.png */,
+				D34BFF7D1D7EF43900877750 /* Icon-72.png */,
+				D34BFF7E1D7EF43900877750 /* Icon-76.png */,
+				D34BFF7F1D7EF43900877750 /* Icon-87.png */,
+				D34BFF801D7EF43900877750 /* Icon-114.png */,
+				D34BFF811D7EF43900877750 /* Icon-120.png */,
+				D34BFF821D7EF43900877750 /* Icon-144.png */,
+				D34BFF831D7EF43900877750 /* Icon-152.png */,
+				D34BFF841D7EF43900877750 /* Icon-180.png */,
 				9B7A986B171E9E8F00393562 /* Animated Table */,
 				D386BB9B1D3DF7700008AA8B /* mZone PokerUITests */,
 				9B7A9864171E9E8F00393562 /* Frameworks */,
@@ -244,10 +298,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34BFF861D7EF43900877750 /* Icon-57.png in Resources */,
+				D34BFF891D7EF43900877750 /* Icon-76.png in Resources */,
+				D34BFF8F1D7EF43900877750 /* Icon-180.png in Resources */,
+				D34BFF8A1D7EF43900877750 /* Icon-87.png in Resources */,
 				9B7A9870171E9E8F00393562 /* InfoPlist.strings in Resources */,
+				D34BFF771D7EF42900877750 /* Default.png in Resources */,
+				D34BFF781D7EF42900877750 /* Default@2x.png in Resources */,
+				D34BFF741D7EF42900877750 /* 1242x2208.png in Resources */,
+				D34BFF8B1D7EF43900877750 /* Icon-114.png in Resources */,
+				D34BFF791D7EF42900877750 /* Default768x1024.png in Resources */,
 				D386BB951D3D3AA70008AA8B /* SecondViewCViewController.xib in Resources */,
 				D31B65FD1D3E683700B32269 /* Images.xcassets in Resources */,
+				D34BFF8C1D7EF43900877750 /* Icon-120.png in Resources */,
+				D34BFF761D7EF42900877750 /* Default-Portrait@2x~ipad.png in Resources */,
 				9B7A9882171E9E8F00393562 /* ViewController.xib in Resources */,
+				D34BFF751D7EF42900877750 /* Default-568h@2x.png in Resources */,
+				D34BFF881D7EF43900877750 /* Icon-72.png in Resources */,
+				D34BFF8E1D7EF43900877750 /* Icon-152.png in Resources */,
+				D34BFF731D7EF42900877750 /* 750x1334.png in Resources */,
+				D34BFF871D7EF43900877750 /* Icon-60.png in Resources */,
+				D34BFF8D1D7EF43900877750 /* Icon-144.png in Resources */,
+				D34BFF851D7EF43900877750 /* Icon-29.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
