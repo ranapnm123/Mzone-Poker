@@ -35,13 +35,6 @@
 		D31B65F81D3E661400B32269 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = D31B65EC1D3E661400B32269 /* Icon-87.png */; };
 		D31B65F91D3E661400B32269 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D31B65ED1D3E661400B32269 /* Icon.png */; };
 		D31B65FD1D3E683700B32269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31B65FC1D3E683700B32269 /* Images.xcassets */; };
-		D34BFF651D7EEB5B00877750 /* 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF5E1D7EEB5B00877750 /* 750x1334.png */; };
-		D34BFF661D7EEB5B00877750 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF5F1D7EEB5B00877750 /* 1242x2208.png */; };
-		D34BFF671D7EEB5B00877750 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF601D7EEB5B00877750 /* Default-568h@2x.png */; };
-		D34BFF681D7EEB5B00877750 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF611D7EEB5B00877750 /* Default-Portrait@2x~ipad.png */; };
-		D34BFF691D7EEB5B00877750 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF621D7EEB5B00877750 /* Default.png */; };
-		D34BFF6A1D7EEB5B00877750 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF631D7EEB5B00877750 /* Default@2x.png */; };
-		D34BFF6B1D7EEB5B00877750 /* Default768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF641D7EEB5B00877750 /* Default768x1024.png */; };
 		D386BB941D3D3A770008AA8B /* SecondViewCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D386BB901D3D37470008AA8B /* SecondViewCViewController.m */; };
 		D386BB951D3D3AA70008AA8B /* SecondViewCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D386BB911D3D37470008AA8B /* SecondViewCViewController.xib */; };
 		D386BB9D1D3DF7700008AA8B /* mZone_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386BB9C1D3DF7700008AA8B /* mZone_PokerUITests.swift */; };
@@ -94,13 +87,6 @@
 		D31B65EC1D3E661400B32269 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-87.png"; path = "App Icon/Icon-87.png"; sourceTree = "<group>"; };
 		D31B65ED1D3E661400B32269 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "App Icon/Icon.png"; sourceTree = "<group>"; };
 		D31B65FC1D3E683700B32269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "mZone Poker/Images.xcassets"; sourceTree = "<group>"; };
-		D34BFF5E1D7EEB5B00877750 /* 750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 750x1334.png; sourceTree = "<group>"; };
-		D34BFF5F1D7EEB5B00877750 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
-		D34BFF601D7EEB5B00877750 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D34BFF611D7EEB5B00877750 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
-		D34BFF621D7EEB5B00877750 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D34BFF631D7EEB5B00877750 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D34BFF641D7EEB5B00877750 /* Default768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default768x1024.png; sourceTree = "<group>"; };
 		D386BB8C1D3D12E30008AA8B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		D386BB8E1D3D37460008AA8B /* mZone PokerUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mZone PokerUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D386BB8F1D3D37470008AA8B /* SecondViewCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewCViewController.h; sourceTree = "<group>"; };
@@ -137,13 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				D31B65FC1D3E683700B32269 /* Images.xcassets */,
-				D34BFF5E1D7EEB5B00877750 /* 750x1334.png */,
-				D34BFF5F1D7EEB5B00877750 /* 1242x2208.png */,
-				D34BFF601D7EEB5B00877750 /* Default-568h@2x.png */,
-				D34BFF611D7EEB5B00877750 /* Default-Portrait@2x~ipad.png */,
-				D34BFF621D7EEB5B00877750 /* Default.png */,
-				D34BFF631D7EEB5B00877750 /* Default@2x.png */,
-				D34BFF641D7EEB5B00877750 /* Default768x1024.png */,
 				D31B65E21D3E661400B32269 /* Icon-1024.png */,
 				D31B65E31D3E661400B32269 /* Icon-114.png */,
 				D31B65E41D3E661400B32269 /* Icon-120.png */,
@@ -311,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31B65F91D3E661400B32269 /* Icon.png in Resources */,
-				D34BFF671D7EEB5B00877750 /* Default-568h@2x.png in Resources */,
 				D31B65F41D3E661400B32269 /* Icon-57.png in Resources */,
 				D31B65F71D3E661400B32269 /* Icon-76.png in Resources */,
 				D31B65F81D3E661400B32269 /* Icon-87.png in Resources */,
@@ -321,17 +299,11 @@
 				D31B65EF1D3E661400B32269 /* Icon-114.png in Resources */,
 				9B7A9878171E9E8F00393562 /* Default.png in Resources */,
 				9B7A987A171E9E8F00393562 /* Default@2x.png in Resources */,
-				D34BFF661D7EEB5B00877750 /* 1242x2208.png in Resources */,
-				D34BFF6A1D7EEB5B00877750 /* Default@2x.png in Resources */,
 				9B7A987C171E9E8F00393562 /* Default-568h@2x.png in Resources */,
-				D34BFF681D7EEB5B00877750 /* Default-Portrait@2x~ipad.png in Resources */,
 				D31B65F01D3E661400B32269 /* Icon-120.png in Resources */,
 				D31B65F21D3E661400B32269 /* Icon-152.png in Resources */,
 				D31B65F11D3E661400B32269 /* Icon-144.png in Resources */,
-				D34BFF651D7EEB5B00877750 /* 750x1334.png in Resources */,
 				D31B65F61D3E661400B32269 /* Icon-72.png in Resources */,
-				D34BFF691D7EEB5B00877750 /* Default.png in Resources */,
-				D34BFF6B1D7EEB5B00877750 /* Default768x1024.png in Resources */,
 				D31B65FD1D3E683700B32269 /* Images.xcassets in Resources */,
 				D31B65F31D3E661400B32269 /* Icon-180.png in Resources */,
 				D31B65F51D3E661400B32269 /* Icon-60.png in Resources */,
