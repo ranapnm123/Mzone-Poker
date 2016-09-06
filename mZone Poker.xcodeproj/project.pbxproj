@@ -35,6 +35,13 @@
 		D31B65F81D3E661400B32269 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = D31B65EC1D3E661400B32269 /* Icon-87.png */; };
 		D31B65F91D3E661400B32269 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D31B65ED1D3E661400B32269 /* Icon.png */; };
 		D31B65FD1D3E683700B32269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31B65FC1D3E683700B32269 /* Images.xcassets */; };
+		D34BFF651D7EEB5B00877750 /* 750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF5E1D7EEB5B00877750 /* 750x1334.png */; };
+		D34BFF661D7EEB5B00877750 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF5F1D7EEB5B00877750 /* 1242x2208.png */; };
+		D34BFF671D7EEB5B00877750 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF601D7EEB5B00877750 /* Default-568h@2x.png */; };
+		D34BFF681D7EEB5B00877750 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF611D7EEB5B00877750 /* Default-Portrait@2x~ipad.png */; };
+		D34BFF691D7EEB5B00877750 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF621D7EEB5B00877750 /* Default.png */; };
+		D34BFF6A1D7EEB5B00877750 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF631D7EEB5B00877750 /* Default@2x.png */; };
+		D34BFF6B1D7EEB5B00877750 /* Default768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF641D7EEB5B00877750 /* Default768x1024.png */; };
 		D386BB941D3D3A770008AA8B /* SecondViewCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D386BB901D3D37470008AA8B /* SecondViewCViewController.m */; };
 		D386BB951D3D3AA70008AA8B /* SecondViewCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D386BB911D3D37470008AA8B /* SecondViewCViewController.xib */; };
 		D386BB9D1D3DF7700008AA8B /* mZone_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386BB9C1D3DF7700008AA8B /* mZone_PokerUITests.swift */; };
@@ -74,19 +81,26 @@
 		9BC4679F171F998D0056FDA8 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
 		9BC467A0171F998D0056FDA8 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
 		9BC467A2171F9B490056FDA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D31B65E21D3E661400B32269 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
-		D31B65E31D3E661400B32269 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
-		D31B65E41D3E661400B32269 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
-		D31B65E51D3E661400B32269 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
-		D31B65E61D3E661400B32269 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		D31B65E71D3E661400B32269 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
-		D31B65E81D3E661400B32269 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
-		D31B65E91D3E661400B32269 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		D31B65EA1D3E661400B32269 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		D31B65EB1D3E661400B32269 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		D31B65EC1D3E661400B32269 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
-		D31B65ED1D3E661400B32269 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D31B65E21D3E661400B32269 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-1024.png"; path = "App Icon/Icon-1024.png"; sourceTree = "<group>"; };
+		D31B65E31D3E661400B32269 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-114.png"; path = "App Icon/Icon-114.png"; sourceTree = "<group>"; };
+		D31B65E41D3E661400B32269 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "App Icon/Icon-120.png"; sourceTree = "<group>"; };
+		D31B65E51D3E661400B32269 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-144.png"; path = "App Icon/Icon-144.png"; sourceTree = "<group>"; };
+		D31B65E61D3E661400B32269 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-152.png"; path = "App Icon/Icon-152.png"; sourceTree = "<group>"; };
+		D31B65E71D3E661400B32269 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-180.png"; path = "App Icon/Icon-180.png"; sourceTree = "<group>"; };
+		D31B65E81D3E661400B32269 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-57.png"; path = "App Icon/Icon-57.png"; sourceTree = "<group>"; };
+		D31B65E91D3E661400B32269 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "App Icon/Icon-60.png"; sourceTree = "<group>"; };
+		D31B65EA1D3E661400B32269 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "App Icon/Icon-72.png"; sourceTree = "<group>"; };
+		D31B65EB1D3E661400B32269 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "App Icon/Icon-76.png"; sourceTree = "<group>"; };
+		D31B65EC1D3E661400B32269 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-87.png"; path = "App Icon/Icon-87.png"; sourceTree = "<group>"; };
+		D31B65ED1D3E661400B32269 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "App Icon/Icon.png"; sourceTree = "<group>"; };
 		D31B65FC1D3E683700B32269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "mZone Poker/Images.xcassets"; sourceTree = "<group>"; };
+		D34BFF5E1D7EEB5B00877750 /* 750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 750x1334.png; sourceTree = "<group>"; };
+		D34BFF5F1D7EEB5B00877750 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
+		D34BFF601D7EEB5B00877750 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D34BFF611D7EEB5B00877750 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		D34BFF621D7EEB5B00877750 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D34BFF631D7EEB5B00877750 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D34BFF641D7EEB5B00877750 /* Default768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default768x1024.png; sourceTree = "<group>"; };
 		D386BB8C1D3D12E30008AA8B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		D386BB8E1D3D37460008AA8B /* mZone PokerUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mZone PokerUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D386BB8F1D3D37470008AA8B /* SecondViewCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewCViewController.h; sourceTree = "<group>"; };
@@ -123,7 +137,25 @@
 			isa = PBXGroup;
 			children = (
 				D31B65FC1D3E683700B32269 /* Images.xcassets */,
-				D31B65E11D3E661400B32269 /* App Icon */,
+				D34BFF5E1D7EEB5B00877750 /* 750x1334.png */,
+				D34BFF5F1D7EEB5B00877750 /* 1242x2208.png */,
+				D34BFF601D7EEB5B00877750 /* Default-568h@2x.png */,
+				D34BFF611D7EEB5B00877750 /* Default-Portrait@2x~ipad.png */,
+				D34BFF621D7EEB5B00877750 /* Default.png */,
+				D34BFF631D7EEB5B00877750 /* Default@2x.png */,
+				D34BFF641D7EEB5B00877750 /* Default768x1024.png */,
+				D31B65E21D3E661400B32269 /* Icon-1024.png */,
+				D31B65E31D3E661400B32269 /* Icon-114.png */,
+				D31B65E41D3E661400B32269 /* Icon-120.png */,
+				D31B65E51D3E661400B32269 /* Icon-144.png */,
+				D31B65E61D3E661400B32269 /* Icon-152.png */,
+				D31B65E71D3E661400B32269 /* Icon-180.png */,
+				D31B65E81D3E661400B32269 /* Icon-57.png */,
+				D31B65E91D3E661400B32269 /* Icon-60.png */,
+				D31B65EA1D3E661400B32269 /* Icon-72.png */,
+				D31B65EB1D3E661400B32269 /* Icon-76.png */,
+				D31B65EC1D3E661400B32269 /* Icon-87.png */,
+				D31B65ED1D3E661400B32269 /* Icon.png */,
 				9B7A986B171E9E8F00393562 /* Animated Table */,
 				D386BB9B1D3DF7700008AA8B /* mZone PokerUITests */,
 				9B7A9864171E9E8F00393562 /* Frameworks */,
@@ -189,25 +221,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D31B65E11D3E661400B32269 /* App Icon */ = {
-			isa = PBXGroup;
-			children = (
-				D31B65E21D3E661400B32269 /* Icon-1024.png */,
-				D31B65E31D3E661400B32269 /* Icon-114.png */,
-				D31B65E41D3E661400B32269 /* Icon-120.png */,
-				D31B65E51D3E661400B32269 /* Icon-144.png */,
-				D31B65E61D3E661400B32269 /* Icon-152.png */,
-				D31B65E71D3E661400B32269 /* Icon-180.png */,
-				D31B65E81D3E661400B32269 /* Icon-57.png */,
-				D31B65E91D3E661400B32269 /* Icon-60.png */,
-				D31B65EA1D3E661400B32269 /* Icon-72.png */,
-				D31B65EB1D3E661400B32269 /* Icon-76.png */,
-				D31B65EC1D3E661400B32269 /* Icon-87.png */,
-				D31B65ED1D3E661400B32269 /* Icon.png */,
-			);
-			path = "App Icon";
-			sourceTree = "<group>";
-		};
 		D386BB9B1D3DF7700008AA8B /* mZone PokerUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +278,9 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Philip Yu";
 				TargetAttributes = {
+					9B7A9861171E9E8F00393562 = {
+						DevelopmentTeam = WMR3AQ2S78;
+					};
 					D386BB991D3DF7700008AA8B = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 9B7A9861171E9E8F00393562;
@@ -295,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31B65F91D3E661400B32269 /* Icon.png in Resources */,
+				D34BFF671D7EEB5B00877750 /* Default-568h@2x.png in Resources */,
 				D31B65F41D3E661400B32269 /* Icon-57.png in Resources */,
 				D31B65F71D3E661400B32269 /* Icon-76.png in Resources */,
 				D31B65F81D3E661400B32269 /* Icon-87.png in Resources */,
@@ -304,11 +321,17 @@
 				D31B65EF1D3E661400B32269 /* Icon-114.png in Resources */,
 				9B7A9878171E9E8F00393562 /* Default.png in Resources */,
 				9B7A987A171E9E8F00393562 /* Default@2x.png in Resources */,
+				D34BFF661D7EEB5B00877750 /* 1242x2208.png in Resources */,
+				D34BFF6A1D7EEB5B00877750 /* Default@2x.png in Resources */,
 				9B7A987C171E9E8F00393562 /* Default-568h@2x.png in Resources */,
+				D34BFF681D7EEB5B00877750 /* Default-Portrait@2x~ipad.png in Resources */,
 				D31B65F01D3E661400B32269 /* Icon-120.png in Resources */,
 				D31B65F21D3E661400B32269 /* Icon-152.png in Resources */,
 				D31B65F11D3E661400B32269 /* Icon-144.png in Resources */,
+				D34BFF651D7EEB5B00877750 /* 750x1334.png in Resources */,
 				D31B65F61D3E661400B32269 /* Icon-72.png in Resources */,
+				D34BFF691D7EEB5B00877750 /* Default.png in Resources */,
+				D34BFF6B1D7EEB5B00877750 /* Default768x1024.png in Resources */,
 				D31B65FD1D3E683700B32269 /* Images.xcassets in Resources */,
 				D31B65F31D3E661400B32269 /* Icon-180.png in Resources */,
 				D31B65F51D3E661400B32269 /* Icon-60.png in Resources */,
@@ -407,7 +430,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -435,7 +458,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -445,17 +468,17 @@
 		9B7A9886171E9E8F00393562 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 16;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,17 +487,17 @@
 		9B7A9887171E9E8F00393562 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 16;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -506,7 +529,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
@@ -539,7 +562,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
 			name = Release;
@@ -573,7 +596,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -582,17 +605,17 @@
 		D3FA314A1D40FE1C00906F7E /* Alpha */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 16;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -624,7 +647,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
@@ -659,7 +682,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -668,17 +691,17 @@
 		D3FA314D1D40FE2F00906F7E /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 16;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -710,7 +733,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
+				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
