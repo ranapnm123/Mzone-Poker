@@ -38,9 +38,10 @@
 		D34BFF8D1D7EF43900877750 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF821D7EF43900877750 /* Icon-144.png */; };
 		D34BFF8E1D7EF43900877750 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF831D7EF43900877750 /* Icon-152.png */; };
 		D34BFF8F1D7EF43900877750 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = D34BFF841D7EF43900877750 /* Icon-180.png */; };
+		D381400D1D801CD0005A024A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386BB8C1D3D12E30008AA8B /* SnapshotHelper.swift */; };
+		D381400E1D80215B005A024A /* mZone_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386BB9C1D3DF7700008AA8B /* mZone_PokerUITests.swift */; };
 		D386BB941D3D3A770008AA8B /* SecondViewCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D386BB901D3D37470008AA8B /* SecondViewCViewController.m */; };
 		D386BB951D3D3AA70008AA8B /* SecondViewCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D386BB911D3D37470008AA8B /* SecondViewCViewController.xib */; };
-		D386BB9D1D3DF7700008AA8B /* mZone_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386BB9C1D3DF7700008AA8B /* mZone_PokerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,7 @@
 		9B7A9865171E9E8F00393562 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B7A9867171E9E8F00393562 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B7A9869171E9E8F00393562 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9B7A986D171E9E8F00393562 /* mZone Poker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mZone Poker-Info.plist"; sourceTree = "<group>"; };
+		9B7A986D171E9E8F00393562 /* mZone Poker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mZone Poker-Info.plist"; path = "Animated Table/mZone Poker-Info.plist"; sourceTree = "<group>"; };
 		9B7A986F171E9E8F00393562 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B7A9871171E9E8F00393562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B7A9873171E9E8F00393562 /* mZone Poker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mZone Poker-Prefix.pch"; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 				D34BFF821D7EF43900877750 /* Icon-144.png */,
 				D34BFF831D7EF43900877750 /* Icon-152.png */,
 				D34BFF841D7EF43900877750 /* Icon-180.png */,
+				9B7A986D171E9E8F00393562 /* mZone Poker-Info.plist */,
 				9B7A986B171E9E8F00393562 /* Animated Table */,
 				D386BB9B1D3DF7700008AA8B /* mZone PokerUITests */,
 				9B7A9864171E9E8F00393562 /* Frameworks */,
@@ -201,7 +203,6 @@
 		9B7A986C171E9E8F00393562 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B7A986D171E9E8F00393562 /* mZone Poker-Info.plist */,
 				9B7A986E171E9E8F00393562 /* InfoPlist.strings */,
 				9B7A9871171E9E8F00393562 /* main.m */,
 				9B7A9873171E9E8F00393562 /* mZone Poker-Prefix.pch */,
@@ -351,7 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D386BB9D1D3DF7700008AA8B /* mZone_PokerUITests.swift in Sources */,
+				D381400D1D801CD0005A024A /* SnapshotHelper.swift in Sources */,
+				D381400E1D80215B005A024A /* mZone_PokerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +416,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -442,7 +444,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -452,17 +454,18 @@
 		9B7A9886171E9E8F00393562 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 16;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CURRENT_PROJECT_VERSION = 27;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -471,17 +474,18 @@
 		9B7A9887171E9E8F00393562 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 16;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CURRENT_PROJECT_VERSION = 27;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -496,8 +500,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -513,7 +517,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "00d6aa42-e975-4254-b69b-d30fc2977cba";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
@@ -528,8 +532,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -546,7 +550,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "00d6aa42-e975-4254-b69b-d30fc2977cba";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
 			name = Release;
@@ -580,7 +584,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -589,17 +593,18 @@
 		D3FA314A1D40FE1C00906F7E /* Alpha */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 16;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CURRENT_PROJECT_VERSION = 27;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -614,8 +619,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -631,7 +636,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "00d6aa42-e975-4254-b69b-d30fc2977cba";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "mZone Poker";
 			};
@@ -666,7 +671,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -675,17 +680,18 @@
 		D3FA314D1D40FE2F00906F7E /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 16;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CURRENT_PROJECT_VERSION = 27;
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Animated Table/mZone Poker-Prefix.pch";
 				INFOPLIST_FILE = "Animated Table/mZone Poker-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.instappy.wizard;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzone.mzonepokerDemo;
 				PRODUCT_MODULE_NAME = "mZone Poker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "8b0e1823-b3fd-4594-b30a-88c56358a1c8";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -700,8 +706,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PULP STRATEGY TECHNOLOGIES PRIVATE LIMITED (WMR3AQ2S78)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chew Boon thong (5XY47D9NQ2)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -717,7 +723,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulp.-animationTest.mZone-PokerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7316482a-93be-4183-bd90-f2cf887b6076";
+				PROVISIONING_PROFILE = "00d6aa42-e975-4254-b69b-d30fc2977cba";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = "mZone Poker";
 			};

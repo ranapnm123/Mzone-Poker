@@ -31,6 +31,7 @@ public class Snapshot: NSObject {
         setLanguage(app)
         setLocale(app)
         setLaunchArguments(app)
+        
     }
 
     class func setLanguage(app: XCUIApplication) {

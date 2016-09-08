@@ -1,43 +1,4 @@
-# Customise this file, documentation can be found here:
-# https://github.com/KrauseFx/fastlane/tree/master/docs
-# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
-# Uncomment the following line to opt out
-opt_out_usage
-update_fastlane
-fastlane_version “1.97.2”
-default_platform :ios
-platform :ios do
-  before_all do
-    #sigh
-  #update_project_provisioning(
-   # xcodeproj: “/Users/Ravindra/Documents/Mzone-Poker/mZone Poker.xcodeproj",
-    #profile: “/Users/Ravindra/Documents/Mzone-Poker/fastlane/fastlane:certs/#commzonemzonepokerDemo_AppStore.mobileprovision" 
-    #)
-
-    gym(scheme: "mZone Poker", project: "mZone Poker.xcodeproj") # Build your app - more options available
-  end
-
-  desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    deliver(beta: true)
-  end
-
-  #desc "Deploy a new version to the App Store"
-  #desc "** Full Markdown** Support: `code`"
-  #lane :deploy do
-   # sigh
-  #end
-
-  # You can define as many lanes as you want
-  after_all do |lane|
-    
-  end
-
-  error do |lane, exception|
-  end
+desc "Upload to App Store and submit for review"
+lane :upload do
+  deliver
 end
-
-
-# More information about multiple platforms in fastlane: 
-# https://github.com/KrauseFx/fastlane/blob/master/docs/Platforms.md
