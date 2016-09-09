@@ -5,11 +5,14 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
-### upload
+## iOS
+### ios beta
 ```
-fastlane upload
+fastlane ios beta
 ```
-Upload to App Store and submit for review
+Submit a new Beta Build to Apple TestFlight
+
+This will also make sure the profile is up to date
 
 ----
 
