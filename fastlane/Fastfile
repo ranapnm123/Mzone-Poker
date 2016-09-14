@@ -11,12 +11,14 @@ platform :ios do
   #desc "This will also make sure the profile is up to date"
   lane :beta do
     environment = prompt(text: "Environment (PROD,PREPROD,DEV): ")
-    increment_build_number
+    increment_build_number({
+  build_number: latest_testflight_build_number + 1
+})
     cert
     sigh(force: true)
     #match(force: true)
-    ipa = gym(scheme: “mZone Poker”,use_legacy_build_api:true,xcargs:"OTHER_SWIFT_FLAGS='-D" + environment + "'") # Build your app - more options available
-    pilot(ipa: ipa)
+    gym(scheme: “mZone Poker”,use_legacy_build_api:true,xcargs:"OTHER_SWIFT_FLAGS='-D" + environment + "'") # Build your app - more options available
+    pilot
 
   end     
     end
