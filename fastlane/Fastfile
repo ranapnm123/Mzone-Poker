@@ -15,8 +15,8 @@ platform :ios do
     cert
     sigh(force: true)
     #match(force: true)
-    gym(scheme: “mZone Poker”,use_legacy_build_api:true,xcargs:"OTHER_SWIFT_FLAGS='-D" + environment + "'") # Build your app - more options available
-    pilot
+    ipa = gym(scheme: “mZone Poker”,use_legacy_build_api:true,xcargs:"OTHER_SWIFT_FLAGS='-D" + environment + "'") # Build your app - more options available
+    pilot(ipa: ipa)
 
   end     
     end
